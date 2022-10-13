@@ -6,7 +6,7 @@ importers:
     specifiers:
       '@manypkg/cli': ^0.19.2
       prettier: ^2.7.1
-      turbo: ^1.5.5
+      turbo: ^1.5.6
     dependencies:
       '@manypkg/cli': 0.19.2
       prettier: 2.7.1
@@ -63,7 +63,7 @@ importers:
       eslint-config-prettier: ^8.3.0
       eslint-plugin-prettier: ^4.0.0
       eslint-plugin-react: ^7.28.0
-      gatsby: ^4.4.0
+      gatsby: ^4.24.4
       gatsby-plugin-create-client-paths: ^4.4.0
       gatsby-plugin-manifest: ^4.4.0
       gatsby-plugin-postcss: ^5.4.0
@@ -6196,7 +6196,6 @@ packages:
     dependencies:
       '@types/minimatch': 5.1.2
       '@types/node': 18.8.5
-    dev: true
 
   /@types/google.maps/3.50.4:
     resolution: {integrity: sha512-edePfF9fo29bFdzcNIAS6rM4KnONY5WiZZaTKASfMLQxjdEysJp+RRkzBc71OIjFXd3bWAjriOL/ek1RloJRng==}
@@ -6432,7 +6431,7 @@ packages:
   /@types/rimraf/2.0.5:
     resolution: {integrity: sha512-YyP+VfeaqAyFmXoTh3HChxOQMyjByRMsHU7kc5KOJkSlXudhMhQIALbYV7rHh/l8d2lX3VUQzprrcAgWdRuU8g==}
     dependencies:
-      '@types/glob': 5.0.37
+      '@types/glob': 8.0.0
       '@types/node': 18.8.5
 
   /@types/scheduler/0.16.2:
@@ -8415,7 +8414,7 @@ packages:
       mississippi: 3.0.0
       mkdirp: 0.5.6
       move-concurrently: 1.0.1
-      promise-inflight: 1.0.1_bluebird@3.7.2
+      promise-inflight: 1.0.1
       rimraf: 2.7.1
       ssri: 6.0.2
       unique-filename: 1.1.1
@@ -17911,17 +17910,6 @@ packages:
     peerDependenciesMeta:
       bluebird:
         optional: true
-
-  /promise-inflight/1.0.1_bluebird@3.7.2:
-    resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
-    peerDependencies:
-      bluebird: '*'
-    peerDependenciesMeta:
-      bluebird:
-        optional: true
-    dependencies:
-      bluebird: 3.7.2
-    dev: true
 
   /promise-polyfill/8.2.3:
     resolution: {integrity: sha512-Og0+jCRQetV84U8wVjMNccfGCnMQ9mGs9Hv78QFe+pSDD3gWTpz0y+1QCuxy5d/vBFuZ3iwP2eycAkvqIMPmWg==}
