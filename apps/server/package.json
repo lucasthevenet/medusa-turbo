@@ -1,11 +1,13 @@
 {
-  "name": "@medusa/server",
+  "name": "server",
   "version": "0.0.1",
-  "description": "A starter for Medusa projects.",
   "scripts": {
     "dev": "medusa develop",
     "seed": "medusa seed -f ./data/seed.json",
-    "build": "babel src -d dist --extensions \".ts,.js\""
+    "build": "babel src -d dist --extensions \".ts,.js\"",
+    "migrate": "medusa migrations run",
+    "start": "medusa develop",
+    "deploy": "medusa deploy"
   },
   "dependencies": {
     "@medusajs/medusa": "^1.3.7",

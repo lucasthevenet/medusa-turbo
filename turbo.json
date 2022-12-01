@@ -1,8 +1,9 @@
 {
+  "$schema": "https://turborepo.org/schema.json",
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", ".expo/**"]
+      "outputs": [".next/**", "dist/**"]
     },
     "lint": {
       "outputs": []
@@ -10,8 +11,22 @@
     "dev": {
       "cache": false
     },
-    "clean": {},
-    "//#clean": {},
-    "postinstall": {}
+    "clean": {
+      "cache": false
+    },
+    "postinstall": {},
+    "deploy": {
+      "dependsOn": ["test", "build"],
+      "outputs": []
+    },
+    "//#deploy": {},
+    "admin#build": {
+      "dependsOn": ["^build", "server#build"],
+      "outputs": ["dist/**"]
+    },
+    "storefront#build": {
+      "dependsOn": ["^build", "server#build"],
+      "outputs": [".next/**"]
+    }
   }
 }
