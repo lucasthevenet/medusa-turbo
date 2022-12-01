@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "dev": "next dev -p 8000",
-    "build": "start-server-and-test \"(cd ../../apps/server && npm run start)\" http://localhost:9000 \"next build\"",
+    "build": "start-server-and-test \"(cd ../../apps/server && npm run start)\" http://localhost:9000/store/products \"next build\"",
     "start": "next start -p 8000",
     "lint": "next lint",
     "cypress": "cypress open",

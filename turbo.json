@@ -21,8 +21,8 @@
     },
     "//#deploy": {},
     "admin#build": {
-      "dependsOn": ["^build", "server#build"],
-      "outputs": ["dist/**"]
+      "dependsOn": ["^build", "storefront#build"],
+      "outputs": ["public/**"]
     },
     "storefront#build": {
       "dependsOn": ["^build", "server#build"],

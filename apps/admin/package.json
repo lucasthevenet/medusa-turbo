@@ -113,7 +113,7 @@
   },
   "scripts": {
     "dev": "gatsby develop -p 7000",
-    "build": "start-server-and-test \"(cd ../../apps/server && npm run start)\" http://localhost:9000 \"gatsby build\"",
+    "build": "start-server-and-test \"(cd ../../apps/server && npm run start)\" http://localhost:9000/store/products \"gatsby build\"",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
